@@ -4,8 +4,8 @@
 ![Example 3](display/plane.gif)
 ![Example 4](display/table.gif)
 
-##Installation
-fllow First you have to make sure that you have all dependencies in place.
+## Installation
+First you have to make sure that you have all dependencies in place.
 
 You can create an anaconda environment called `dmifnet_space` using
 ```
@@ -17,8 +17,8 @@ Then, compile the extension modules.
 ```
 python setup.py build_ext --inplace
 ```
-##Dataset
-You can download our preprocessed data (73.4 GB) using
+## Dataset
+You can download our preprocessed data using
 ```
 bash scripts/download_data.sh
 ```
@@ -35,11 +35,15 @@ For evaluation of the models, you can run it using
 ```
 python eval_meshes.py yourpath/dmifnet.yaml
 ```
+## Pretrained model
+you can download our pretrained model via
+* download the [DmifNet](https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and password is [5iwg] `. 
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
 If you find our code or paper useful, please consider citing
- @inproceedings{DmifNet,
+
+   @inproceedings{DmifNet,
         title = {DmifNet: 3D shape Reconstruction based on Dynamic Multi-branch Information Fusion},
         author = {Lei Li, Suping Wu},
     }
