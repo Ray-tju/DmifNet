@@ -6,19 +6,40 @@
 
 ##Installation
 fllow First you have to make sure that you have all dependencies in place.
-The simplest way to do so, is to use [anaconda](https://www.anaconda.com/). 
 
 You can create an anaconda environment called `dmifnet_space` using
 ```
-conda env create -f environment.yaml
-conda activate mesh_funcspace
+conda env create -f dmif_env.yaml
+conda activate dmifnet_space
 ```
 
-Next, compile the extension modules.
-You can do this via
+Then, compile the extension modules.
 ```
 python setup.py build_ext --inplace
 ```
+##Dataset
+You can download our preprocessed data (73.4 GB) using
+```
+bash scripts/download_data.sh
+```
 
-To compile the dmc extension, you have to have a cuda enabled device set up.
-If you experience any errors, you can simply comment out the `dmc_*` dependencies in `setup.py`.
+## Generation
+To generate meshes using a trained model, use
+```
+python generate.py yourpath/dmifnet.yaml
+```
+
+## Eval
+For evaluation of the models, you can run it using
+
+```
+python eval_meshes.py yourpath/dmifnet.yaml
+```
+
+# Futher Information
+Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
+If you find our code or paper useful, please consider citing
+ @inproceedings{DmifNet,
+        title = {DmifNet: 3D shape Reconstruction based on Dynamic Multi-branch Information Fusion},
+        author = {Lei Li, Suping Wu},
+    }
