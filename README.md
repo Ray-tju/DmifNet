@@ -38,15 +38,8 @@ python eval_meshes.py yourpath/dmifnet.yaml
 ## Pretrained model
 you can download our pretrained model via BaiduNetdisk
 
-* download the [DmifNet](https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and Extracted key  is [5iwg] `. 
+* download the [DmifNet](https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and Extracted key is [5iwg] `. 
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
 
-
-If you find our code or paper useful, please consider citing
-
-   @inproceedings{DmifNet,
-        title = {DmifNet: 3D shape Reconstruction based on Dynamic Multi-branch Information Fusion},
-        author = {Lei Li, Suping Wu},
-    }
