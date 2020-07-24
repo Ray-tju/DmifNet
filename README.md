@@ -36,11 +36,13 @@ For evaluation of the models, you can run it using
 python eval_meshes.py yourpath/dmifnet.yaml
 ```
 ## Pretrained model
-you can download our pretrained model via
-* download the [DmifNet](https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and password is [5iwg] `. 
+you can download our pretrained model via BaiduNetdisk
+* download the [DmifNet] (https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and password is [5iwg] `. 
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
+
+
 If you find our code or paper useful, please consider citing
 
    @inproceedings{DmifNet,
