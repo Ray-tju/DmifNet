@@ -18,7 +18,7 @@ Then, compile the extension modules.
 python setup.py build_ext --inplace
 ```
 ## Dataset
-You can download our preprocessed data using
+You can download data using
 ```
 bash scripts/download_data.sh
 ```
