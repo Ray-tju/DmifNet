@@ -1,4 +1,4 @@
-name: dmif_space
+name: dmifnet_space
 channels:
   - conda-forge
   - pytorch
