@@ -15,7 +15,7 @@ conda activate dmifnet_space
 
 Then, compile the extension modules.
 ```
-python setup.py build_ext --inplace
+python set_env_up.py build_ext --inplace
 ```
 ## Dataset
 You can download data using
