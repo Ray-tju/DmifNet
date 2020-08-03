@@ -1,6 +1,6 @@
 method: dmif_model
 data:
-  path: /home/lab105/lilei/occupancy_networks-master/data/ShapeNet
+  path: /home/lab105/lilei/DmifNet/data/ShapeNet
   img_folder: img_choy2016
   img_size: 224
   points_subsample: 2048
