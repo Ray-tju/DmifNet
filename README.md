@@ -20,7 +20,7 @@ python set_env_up.py build_ext --inplace
 ## Dataset
 You can download data using
 ```
-bash scripts/download_data.sh
+bash script/download_data.sh
 ```
 
 ## Generation
