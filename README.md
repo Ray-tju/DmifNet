@@ -29,7 +29,7 @@ To generate meshes using a trained model, use
 python generate.py yourpath/dmifnet.yaml
 ```
 
-## Eval
+## Evaluation
 For evaluation of the models, you can run it using
 
 ```
