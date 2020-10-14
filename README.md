@@ -38,7 +38,7 @@ python eval_meshes.py yourpath/dmifnet.yaml
 ## Pretrained model
 you can download our pretrained model via BaiduNetdisk
 
-* download the [DmifNet](https://pan.baidu.com/s/1lQPaBSiZbEPFT1e2qiH0zA) and Extracted key is [5iwg]([5iwg]) 
+* download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) and Extracted key is [3hfs]([5iwg]) 
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
