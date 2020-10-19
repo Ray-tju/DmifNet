@@ -41,10 +41,10 @@ you can download our pretrained model via BaiduNetdisk
 * download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) and Extracted key is [3hfs]([5iwg]) 
 
 ## Quantitative Results
-name | 111 | 222 | 333 | 444
-:-: | :-: | :-: | :-: | :-:
-aaa | bbb | ccc | ddd | eee| 
-fff | ggg| hhh | iii | 000|
+Method | IoU | Normal consistency | Chamfer distance 
+:-: | :-: | :-: | :-: 
+aaa | bbb | ccc | ddd  
+fff | ggg| hhh | iii 
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
