@@ -8,8 +8,8 @@
 ```
 @inproceedings{DmifNet,
           title={{DmifNet: 3D Shape Reconstruction based onDynamic Multi–Branch Information Fusion}},
-          author={Lei Li, Thibault and Suping Wu},
-          booktitle={Proceedings IEEE Conf. on  International Conference on Pattern Recognition (ICPR)},
+          author={Lei Li and Suping Wu},
+          booktitle={Proceedings IEEE Conf. on International Conference on Pattern Recognition (ICPR)},
           year={2020}
         }
 ```
