@@ -4,6 +4,14 @@
 ![Example 3](display/plane.gif)
 ![Example 4](display/table.gif)
 
+## Citing this work
+@inproceedings{DmifNet,
+          title={{DmifNet: 3D Shape Reconstruction based onDynamic Multi–Branch Information Fusion}},
+          author={Lei Li, Thibault and Suping Wu},
+          booktitle={Proceedings IEEE Conf. on  International Conference on Pattern Recognition (ICPR)},
+          year={2020}
+        }
+
 ## Installation
 First you have to make sure that you have all dependencies in place.
 
@@ -41,10 +49,13 @@ you can download our pretrained model via BaiduNetdisk
 * download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) and Extracted key is [3hfs]([5iwg]) 
 
 ## Quantitative Results
-Method | IoU | Normal consistency | Chamfer distance 
+Method | Intersection over Union | Normal consistency | Chamfer distance 
 :-: | :-: | :-: | :-: 
-aaa | bbb | ccc | ddd  
-fff | ggg| hhh | iii 
+3D-R2N2 | 0.493 | 0.695 | 0.278  
+Pix2Mesh | 0.480 | 0.772 | 0.216 
+AtlasNet | -- | 0.811 | 0.175 
+ONet | 0.571 | 0.834 | 0.215
+DmifNet | 0.607 | 0.846 | 0.185
 
 # Futher Information
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
