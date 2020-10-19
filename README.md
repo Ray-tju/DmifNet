@@ -41,7 +41,7 @@ you can download our pretrained model via BaiduNetdisk
 * download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) and Extracted key is [3hfs]([5iwg]) 
 
 ## Quantitative Results
-Method | IoU | Normal consistency | Chamfer-$L_1$ | 444
+Method | IoU | Normal consistency | Chamfer (1) | 444
 - | :-: | :-: | :-: | -:
 aaa | bbb | ccc | ddd | eee| 
 fff | ggg| hhh | iii | 000|
