@@ -26,11 +26,6 @@ Then, compile the extension modules.
 ```
 python set_env_up.py build_ext --inplace
 ```
-## Dataset
-You can download data using
-```
-bash script/download_data.sh
-```
 
 ## Generation
 To generate meshes using a trained model, use
