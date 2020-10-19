@@ -5,13 +5,14 @@
 ![Example 4](display/table.gif)
 
 ## Citing this work
+```
 @inproceedings{DmifNet,
           title={{DmifNet: 3D Shape Reconstruction based onDynamic Multi–Branch Information Fusion}},
           author={Lei Li, Thibault and Suping Wu},
           booktitle={Proceedings IEEE Conf. on  International Conference on Pattern Recognition (ICPR)},
           year={2020}
         }
-
+```
 ## Installation
 First you have to make sure that you have all dependencies in place.
 
