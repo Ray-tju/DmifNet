@@ -33,6 +33,14 @@ To generate meshes using a trained model, use
 python generate.py yourpath/dmifnet.yaml
 ```
 
+## Training
+```
+python train.py yourpath/dmifnet.yaml
+```
+
+## DataSet
+There is no space in the cloud disk to upload our dataset, you can contact me by email to get the dataset, or you can check the baseline work Onet to download the dataset.
+
 ## Evaluation
 For evaluation of the models, you can run it using
 
@@ -54,5 +62,6 @@ ONet | 0.571 | 0.834 | 0.215
 DmifNet | 0.607 | 0.846 | 0.185
 
 # Futher Information
+If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
 Thanks for  baseline work [Occupancy Networks - Learning 3D Reconstruction in Function Space](https://avg.is.tuebingen.mpg.de/publications/occupancy-networks).
 
