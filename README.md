@@ -26,6 +26,9 @@ Then, compile the extension modules.
 ```
 python set_env_up.py build_ext --inplace
 ```
+Then, download the batchnet modules.
+
+
 
 ## Generation
 To generate meshes using a trained model, use
