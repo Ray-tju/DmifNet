@@ -26,9 +26,10 @@ Then, compile the extension modules.
 ```
 python set_env_up.py build_ext --inplace
 ```
-Then, download the batchnet modules.
+Then, download the BatchNet modules.
 
-* download the [Batchnet](https://pan.baidu.com/s/1KzcgkiE-gxTy1-cw0ikaAA) and Extracted key is [1234]([1234]) 
+* download the [BatchNet](https://pan.baidu.com/s/1KzcgkiE-gxTy1-cw0ikaAA) and Extracted key is [1234]([1234]) 
+* download the [BatchNet](https://drive.google.com/file/d/1fqDrqU_wMb_EbHCprZkOIWWxSiXPxaJK/view?usp=sharing) via Google
 
 Next, put your model path in DmifNet/dmifnet/encoder/batchnet.py /def resnet18(pretrained=False, **kwargs):
 
@@ -54,9 +55,11 @@ For evaluation of the models, you can run it using
 python eval_meshes.py ./config/img/dmifnet.yaml
 ```
 ## Pretrained model
-you can download our pretrained model via BaiduNetdisk
+you can download our pretrained model via BaiduNetdisk or Google Drive
 
-* download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) and Extracted key is [3hfs]([5iwg]) 
+* download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) via BaiDu and Extracted key is [3hfs]([5iwg]) 
+* download the [DmifNet](https://drive.google.com/file/d/1rOJaAnJlg0RmTiiBg2RiSXO8QYsv8fs1/view?usp=sharing) via Google
+
 
 ## Quantitative Results
 Method | Intersection over Union | Normal consistency | Chamfer distance 
