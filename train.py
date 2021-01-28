@@ -10,8 +10,8 @@ import time
 import datetime
 
 matplotlib.use('Agg')
-from im2mesh import config, data
-from im2mesh.checkpoints import CheckpointIO
+from dmifnet import config, data
+from dmifnet.checkpoints import CheckpointIO
 
 # Arguments
 parser = argparse.ArgumentParser(
