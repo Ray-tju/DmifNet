@@ -173,7 +173,7 @@ def resnet18(pretrained=False, **kwargs):
     """
     model = ResNet(BasicBlock, [2, 2, 2, 2], [[1, 2], [2]], **kwargs)
     if pretrained:
-        model.load_state_dict(torch.load("/raid/hliu_data/Drama/drama_small/DmifNet-master/resnet18_dhm-eb861a8f.pth"))
+        model.load_state_dict(torch.load("your path of batchnet"))
     return model
 
 
