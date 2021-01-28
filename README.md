@@ -27,7 +27,7 @@ Then, compile the extension modules.
 python set_env_up.py build_ext --inplace
 ```
 Then, download the batchnet modules.
-
+* download the [Batchnet](https://pan.baidu.com/s/1KzcgkiE-gxTy1-cw0ikaAA) and Extracted key is [1234]([1234]) 
 
 
 ## Generation
