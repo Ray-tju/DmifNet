@@ -36,12 +36,12 @@ Next, put your model path in DmifNet/dmifnet/encoder/batchnet.py /def resnet18(p
 ## Generation
 To generate meshes using a trained model, use
 ```
-python generate.py yourpath/dmifnet.yaml
+python generate.py ./config/img/dmifnet.yaml
 ```
 
 ## Training
 ```
-python train.py yourpath/dmifnet.yaml
+python train.py ./config/img/dmifnet.yaml
 ```
 
 ## DataSet
@@ -51,7 +51,7 @@ There is no space in the cloud disk to upload our dataset, you can contact me by
 For evaluation of the models, you can run it using
 
 ```
-python eval_meshes.py yourpath/dmifnet.yaml
+python eval_meshes.py ./config/img/dmifnet.yaml
 ```
 ## Pretrained model
 you can download our pretrained model via BaiduNetdisk
