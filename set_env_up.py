@@ -1,13 +1,21 @@
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+from distutils.extension import Extension
+from Cython.Build import cythonize
+from torch.utils.cpp_extension import BuildExtension, CppExtension, CUDAExtension
 import numpy
+
 
 numpy_include_dir = numpy.get_include()
 
 #kd tree
 pykdtree = Extension(
-    'im2mesh.utils.libkdtree.pykdtree.kdtree',
+    'dmifnet.utils.libkdtree.pykdtree.kdtree',
     sources=[
-        'im2mesh/utils/libkdtree/pykdtree/kdtree.c',
-        'im2mesh/utils/libkdtree/pykdtree/_kdtree_core.c'
+        'dmifnet/utils/libkdtree/pykdtree/kdtree.c',
+        'dmifnet/utils/libkdtree/pykdtree/_kdtree_core.c'
     ],
     language='c',
     extra_compile_args=['-std=c99', '-O3', '-fopenmp'],
@@ -16,11 +24,11 @@ pykdtree = Extension(
 
 # marching cubes algorithm
 mcubes_module = Extension(
-    'im2mesh.utils.libmcubes.mcubes',
+    'dmifnet.utils.libmcubes.mcubes',
     sources=[
-        'im2mesh/utils/libmcubes/mcubes.pyx',
-        'im2mesh/utils/libmcubes/pywrapper.cpp',
-        'im2mesh/utils/libmcubes/marchingcubes.cpp'
+        'dmifnet/utils/libmcubes/mcubes.pyx',
+        'dmifnet/utils/libmcubes/pywrapper.cpp',
+        'dmifnet/utils/libmcubes/marchingcubes.cpp'
     ],
     language='c++',
     extra_compile_args=['-std=c++11'],
@@ -29,53 +37,53 @@ mcubes_module = Extension(
 
 # triangle hash (efficient mesh intersection)
 triangle_hash_module = Extension(
-    'im2mesh.utils.libmesh.triangle_hash',
+    'dmifnet.utils.libmesh.triangle_hash',
     sources=[
-        'im2mesh/utils/libmesh/triangle_hash.pyx'
+        'dmifnet/utils/libmesh/triangle_hash.pyx'
     ],
     libraries=['m']  # Unix-like specific
 )
 
 
 mise_module = Extension(
-    'im2mesh.utils.libmise.mise',
+    'dmifnet.utils.libmise.mise',
     sources=[
-        'im2mesh/utils/libmise/mise.pyx'
+        'dmifnet/utils/libmise/mise.pyx'
     ],
 )
 
 simplify_mesh_module = Extension(
-    'im2mesh.utils.libsimplify.simplify_mesh',
+    'dmifnet.utils.libsimplify.simplify_mesh',
     sources=[
-        'im2mesh/utils/libsimplify/simplify_mesh.pyx'
+        'dmifnet/utils/libsimplify/simplify_mesh.pyx'
     ]
 )
 
 voxelize_module = Extension(
-    'im2mesh.utils.libvoxelize.voxelize',
+    'dmifnet.utils.libvoxelize.voxelize',
     sources=[
-        'im2mesh/utils/libvoxelize/voxelize.pyx'
+        'dmifnet/utils/libvoxelize/voxelize.pyx'
     ],
     libraries=['m']  # Unix-like specific
 )
 
 
 dmc_pred2mesh_module = CppExtension(
-    'im2mesh.dmc.ops.cpp_modules.pred2mesh',
+    'dmifnet.dmc.ops.cpp_modules.pred2mesh',
     sources=[
-        'im2mesh/dmc/ops/cpp_modules/pred_to_mesh_.cpp',
+        'dmifnet/dmc/ops/cpp_modules/pred_to_mesh_.cpp',
     ]   
 )
 
 dmc_cuda_module = CUDAExtension(
-    'im2mesh.dmc.ops._cuda_ext', 
+    'dmifnet.dmc.ops._cuda_ext', 
     sources=[
-        'im2mesh/dmc/ops/src/extension.cpp',
-        'im2mesh/dmc/ops/src/curvature_constraint_kernel.cu',
-        'im2mesh/dmc/ops/src/grid_pooling_kernel.cu',
-        'im2mesh/dmc/ops/src/occupancy_to_topology_kernel.cu',
-        'im2mesh/dmc/ops/src/occupancy_connectivity_kernel.cu',
-        'im2mesh/dmc/ops/src/point_triangle_distance_kernel.cu',
+        'dmifnet/dmc/ops/src/extension.cpp',
+        'dmifnet/dmc/ops/src/curvature_constraint_kernel.cu',
+        'dmifnet/dmc/ops/src/grid_pooling_kernel.cu',
+        'dmifnet/dmc/ops/src/occupancy_to_topology_kernel.cu',
+        'dmifnet/dmc/ops/src/occupancy_connectivity_kernel.cu',
+        'dmifnet/dmc/ops/src/point_triangle_distance_kernel.cu',
     ]
 )
 
