@@ -1,4 +1,4 @@
-# from dmifnet import icp
+# from im2mesh import icp
 import numpy as np
 from collections import defaultdict
 from tqdm import tqdm
