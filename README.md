@@ -71,7 +71,7 @@ ONet | 0.571 | 0.834 | 0.215
 DmifNet | 0.607 | 0.846 | 0.185
 
 ## Qualitative Results
-<img src="display/Qualitative.jpg" style="zoom:50%">
+<img src="display/Qualitative.jpg" style="zoom:25%">
 
 # Futher Information
 If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
