@@ -28,7 +28,7 @@ python set_env_up.py build_ext --inplace
 ```
 Then, download the BatchNet modules.
 
-* download the [BatchNet](https://pan.baidu.com/s/1KzcgkiE-gxTy1-cw0ikaAA) and Extracted key is [1234]([1234]) 
+* download the [BatchNet](https://pan.baidu.com/s/1KzcgkiE-gxTy1-cw0ikaAA) via BaiDu and Extracted key is [1234]([1234]) 
 * download the [BatchNet](https://drive.google.com/file/d/1fqDrqU_wMb_EbHCprZkOIWWxSiXPxaJK/view?usp=sharing) via Google
 
 Next, put your model path in DmifNet/dmifnet/encoder/batchnet.py /def resnet18(pretrained=False, **kwargs):
@@ -69,6 +69,9 @@ Pix2Mesh | 0.480 | 0.772 | 0.216
 AtlasNet | -- | 0.811 | 0.175 
 ONet | 0.571 | 0.834 | 0.215
 DmifNet | 0.607 | 0.846 | 0.185
+
+## Qualitative Results
+![Example 5](display/Qualitative.jpg)
 
 # Futher Information
 If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
