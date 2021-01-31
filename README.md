@@ -5,6 +5,7 @@
 ![Example 4](display/table.gif)
 
 ## Citing this work
+If you find our code or paper useful, please consider citing
 ```
 @article{li2020dmifnet,
   title={DmifNet: 3D Shape Reconstruction Based on Dynamic Multi-Branch Information Fusion},
