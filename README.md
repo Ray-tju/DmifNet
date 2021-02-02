@@ -57,13 +57,24 @@ python train.py ./config/img/dmifnet.yaml
 You can check the baseline work Onet to download the dataset[ONet and DmifNet: DataSet](https://s3.eu-central-1.amazonaws.com/avg-projects/occupancy_networks/data/dataset_small_v1.1.zip). Thanks for contribution of baseline work.
 
 ## Evaluation
-For evaluation of the models, you can run it using
+
+First, to generate meshes using a trained model, use
+```
+python generate.py ./config/img/dmifnet.yaml
+```
+
+Then, for evaluation of the models, you can run it using
 
 ```
 python eval_meshes.py ./config/img/dmifnet.yaml
 ```
+also can use quick evaluation(don't need generation).
+```
+python eval.py ./config/img/dmifnet.yaml
+```
+
 ## Pretrained model
-you can download our pretrained model via BaiduNetdisk or Google Drive
+you can download our pretrained model via Baidu Netdisk or Google Drive
 
 * download the [DmifNet](https://pan.baidu.com/s/1nihobjv6dW5RVt2Zw2Ycjw) via BaiDu and Extracted key is [3hfs]([5iwg]) 
 * download the [DmifNet](https://drive.google.com/file/d/1rOJaAnJlg0RmTiiBg2RiSXO8QYsv8fs1/view?usp=sharing) via Google
