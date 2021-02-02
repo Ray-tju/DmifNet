@@ -172,7 +172,7 @@ while True:
             # eval_dict = trainer.evaluate(val_loader, args, agent, batch, it, ori_it)
             # metric_val = eval_dict[model_selection_metric]
             try:
-                fobj = open('/home/lab105/lilei/occupancy_networks-master_batchhead/vaild_value.txt', mode='a')
+                fobj = open('./vaild_value.txt', mode='a')
                 nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 现在
                 fobj.write(str(eval_dict) + nowTime)
                 fobj.write('\n')
