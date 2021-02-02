@@ -14,6 +14,13 @@ If you find our code or paper useful, please consider citing
   year={2020}
 }
 ```
+
+## Configuration Environment
+```
+Python3.6, Pytorch: 1.0, CUDA: 9.0+, Cudnn: follow Cuda version, GPU: one Nvidia RTX 2080Ti
+Epoch: Approximately close to the optimal convergence value between 1500 and 2500 epoch
+```
+
 ## Installation
 First you have to make sure that you have all dependencies in place.
 
