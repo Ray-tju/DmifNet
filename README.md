@@ -54,7 +54,7 @@ python train.py ./config/img/dmifnet.yaml
 ```
 
 ## DataSet
-There is no space in the cloud disk to upload our dataset, you can contact me by email to get the dataset, or you can check the baseline work Onet to download the dataset.
+You can check the baseline work Onet to download the dataset[ONet and DmifNet: DataSet](https://s3.eu-central-1.amazonaws.com/avg-projects/occupancy_networks/data/dataset_small_v1.1.zip). Thanks for contribution of baseline work.
 
 ## Evaluation
 For evaluation of the models, you can run it using
