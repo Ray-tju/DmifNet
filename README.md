@@ -7,11 +7,13 @@
 ## Citing this work
 If you find our code or paper useful, please consider citing
 ```
-@article{li2020dmifnet,
-  title={DmifNet: 3D Shape Reconstruction Based on Dynamic Multi-Branch Information Fusion},
+@inproceedings{li2021dmifnet,
+  title={DmifNet: 3D Shape Reconstruction based on Dynamic Multi-Branch Information Fusion},
   author={Li, Lei and Wu, Suping},
-  journal={arXiv preprint arXiv:2011.10776},
-  year={2020}
+  booktitle={2020 25th International Conference on Pattern Recognition (ICPR)},
+  pages={7219--7225},
+  year={2021},
+  organization={IEEE}
 }
 ```
 
